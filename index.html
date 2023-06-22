@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aquarius</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="ContactUsWithForm.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body style="background-color:#1F2024; ">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-nav"
+            style="background-color: #1ae4c0!important;">
+            <div class="container-fluid justify-content-center">
+                <a class="navbar-brand margin-auto-center" href="index.html">
+                    <img src="Ayush-Enterprises-logo.png" alt="Logo" width="35" height="30"
+                        class="d-inline-block align-text-top">
+                    Aquarius
+                </a>
+                <button class="navbar-toggler toggler water-drop-pos" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <a href="#" class="d-flex justify-content-center align-items-center">
+
+                        <span>
+                            <i class="bi bi-list"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                        </span>
+                    </a>
+                </button>
+
+                <div class="offcanvas offcanvas-end offcanvas-width" style="background-color : #1ae4c0;" tabindex="-1"
+                    id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel">Aquarius</h5>
+                        <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body m-auto">
+                        <ul class="navbar-nav flex-grow-1 pe-3">
+                            <li class="nav-item navbar-item d-flex align-items-center nav-li">
+                                <i class="bi bi-house-fill"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-house-fill menu-icons" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
+                                    <path
+                                        d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
+                                </svg>
+                                <a class="nav-link nav-a" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item navbar-item d-flex align-items-center nav-li">
+                                <i class="bi bi-info-circle-fill"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-info-circle-fill menu-icons" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+                                </svg>
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item navbar-item d-flex align-items-center nav-li">
+                                <i class="bi bi-telephone-fill"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-telephone-fill menu-icons" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                </svg>
+                                <a class="nav-link" href="#ContactUsId">Contact Us</a>
+                            </li>
+
+                            </li>
+                            <li class="nav-item navbar-item d-flex align-items-center nav-li">
+                                <i class="bi bi-question-circle-fill"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-question-circle-fill menu-icons" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z" />
+                                </svg>
+                                <a class="nav-link" href="FAQs.html" target="_blank">FAQs</a>
+                            </li>
+                            <li class="nav-item navbar-item d-flex align-items-center nav-li">
+                                <i class="bi bi-wrench-adjustable-circle-fill menu-icons"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-wrench-adjustable-circle-fill menu-icons" viewBox="0 0 16 16">
+                                    <path
+                                        d="M6.705 8.139a.25.25 0 0 0-.288-.376l-1.5.5.159.474.808-.27-.595.894a.25.25 0 0 0 .287.376l.808-.27-.595.894a.25.25 0 0 0 .287.376l1.5-.5-.159-.474-.808.27.596-.894a.25.25 0 0 0-.288-.376l-.808.27.596-.894Z" />
+                                    <path
+                                        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16Zm-6.202-4.751 1.988-1.657a4.5 4.5 0 0 1 7.537-4.623L7.497 6.5l1 2.5 1.333 3.11c-.56.251-1.18.39-1.833.39a4.49 4.49 0 0 1-1.592-.29L4.747 14.2a7.031 7.031 0 0 1-2.949-2.951ZM12.496 8a4.491 4.491 0 0 1-1.703 3.526L9.497 8.5l2.959-1.11c.027.2.04.403.04.61Z" />
+                                </svg>
+                                <a class="nav-link" href="services.html">Services</a>
+                            </li>
+                        </ul>
+                        <footer class="py-3 my-4 bg-white toggler-menu-foot" style="margin: auto;">
+                            <div class="container menu-foot-container d-flex" style="overflow: hidden;">
+                                <p class="text-center text-muted color-white font-size-10 ">© 2022 Company, Samrat
+                                    Private Ltd.</p>
+                                <div class="container d-flex justify-content-center" style="height: 30px;">
+                                    <ul class="nav col-md-4 list-unstyled toggler-menu-foot-sociallogo"
+                                        style="height: 40px;">
+                                        <a href="#"
+                                            class="d-flex justify-content-center align-items-center w-30 menu-foot-icons height-30 ">
+                                            <i class="bi bi-facebook  "></i>
+                                            <svg class="color-mainBlack" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                height="20" fill="currentColor" class="bi bi-facebook"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                            </svg>
+                                        </a>
+                                        <a href="https://instagram.com/bad_captain_adi358?igshid=YmMyMTA2M2Y="
+                                            class="d-flex justify-content-center align-items-center w-30 menu-foot-icons height-30">
+                                            <i class="bi bi-instagram  "></i>
+                                            <svg class="color-mainBlack" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                height="20" fill="currentColor" class="bi bi-instagram"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                            </svg>
+                                        </a>
+                                        <a href=""
+                                            class="d-flex justify-content-center align-items-center w-30 menu-foot-icons height-30">
+                                                <i class="bx bxl-linkedin  "></i>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                                </svg>
+                                        </a>
+                                        <a href=""
+                                            class="d-flex justify-content-center align-items-center w-30 menu-foot-icons height-30">
+                                            <i class="bi bi-telegram  "></i>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-telegram color-mainBlack"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                                            </svg>
+                                        </a>
+                                        <a href=""
+                                            class="d-flex justify-content-center align-items-center w-30 menu-foot-icons height-30">
+                                            <i class="bi bi-twitter  "></i>
+                                            <svg class="color-mainBlack" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                height="20" fill="currentColor" class="bi bi-twitter"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                            </svg>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <p class="text-center text-muted color-white font-size-10" style="margin-top: 10px;">
+                                    Designed & Developed by
+                                    Yasha</p>
+                            </div>
+                        </footer>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="main-header img-fluid overflow-hidden">
+            <img class="img-fluid" src="https://image.lexica.art/full_jpg/f1fb410a-cccc-4ef3-8509-7bc3bf04cb47" alt=""
+                style="height: 490px; width: 1519px;">
+        </div>
+        <div class="container main-header-text">
+            <div class="main-header-h1">
+                <h1 class="main-header-h1-font-size">Drink Pure Water Today!</h1>
+            </div>
+            <div class="main-header-p">
+                Say goodbye to impurities with Aquarius's water purifier sales and services and stay hydrate. Get yours
+                now!
+            </div>
+            <button class="btn btn-outline-danger main-header-shop-now-btn"><a href="#"
+                    style="text-decoration: none; color: rgb(255, 255, 255);">Shop Now</a></button>
+        </div>
+
+        <div class="testimonial d-flex align-items-center">
+            <div class="testimonial-text container">
+                <div class="container testimonial-p text-align-center">
+                    I had great experience with Aquarius! Their water purifiers are top-notch and their sales and
+                    services are exceptional. The team was knowledgeable and professional, and they went above and
+                    beyond to ensure customer satisfaction. Thank you Aquarius for providing clean and safe drinking
+                    water for my family!
+                    <div class="testimonial-writer1">- Aria</div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial d-flex align-items-center" style="background-color:#2A2B2D!important;">
+            <div class="testimonial-text container">
+                <div class="container testimonial-p text-align-center">
+                    I had an amazing experience with Aquarius. Their service team was very knowledgeable and helped me
+                    to choose the perfect water purifier for my home. The installation was done smoothly and the
+                    after-sales service has been exceptional. Thank you, Aquarius, for providing such a great service!
+                    <div class="testimonial-writer1">- Arya</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container marketing ">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 marketing-dimensions"
+                    style="border:.5px solid rgb(225, 225, 225); padding: 20px 20px 0 20px;">
+                    <div class="container d-flex justify-content-center height-170"><img
+                            class="img-fluid img-thumbnail   marcketing-height hover-overlay"
+                            src="https://media.istockphoto.com/id/1409041739/photo/water-purification-filter-install.jpg?s=612x612&w=0&k=20&c=cMxe0pkHGzOKKyH4Rh_tKHMYCY7J6pR0py6ATumbhVY="
+                            alt=""></div>
+                    <br>
+                    <div
+                        class="d-flex justify-content-center align-items-center flex-direction-column text-align-center">
+                        <h2 class="fw-normal text-danger marketing-h2"
+                            style="font-family: 'Signika Negative', sans-serif;">
+                            Purifier
+                            Installation
+                        </h2>
+                        <p class="font-size-20 " style="width: 312px; font-family: 'EB Garamond', serif;">Installing a
+                            water purifier in your home can provide clean, safe drinking water for
+                            you and your family.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 marketing-dimensions"
+                    style="border:.5px solid rgb(225, 225, 225); padding: 20px 20px 0 20px;">
+                    <div class="container d-flex justify-content-center height-170"><img
+                            class="img-fluid img-thumbnail   marcketing-height"
+                            src="https://media.istockphoto.com/id/1076700334/photo/dirty-used-cartridge-filter-of-water-purifier-filtration.jpg?s=612x612&w=0&k=20&c=F8xSnD4QpFXUmBqR3LApvL-OmaCUOGGWpw1xt_VLJZY="
+                            alt=""></div><br>
+
+                    <div
+                        class="d-flex justify-content-center align-items-center flex-direction-column text-align-center">
+                        <h2 class="fw-normal text-success marketing-h2"
+                            style="width:312px; font-family: 'Signika Negative', sans-serif;">Filter
+                            Changing</h2>
+                        <div class="d-flex justify-content-center" style="width: 390px; ">
+                            <p class="font-size-20" style="font-family: 'EB Garamond', serif;">Changing the filters in
+                                your water purifier is an important maintenance task that
+                                ensures your water purifier operate efficiently and effectively.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 marketing-dimensions"
+                    style="border:.5px solid rgb(225, 225, 225); padding: 20px 20px 0 20px;">
+                    <div class="container d-flex justify-content-center height-170"><img
+                            class="img-fluid img-thumbnail   marcketing-height"
+                            src="https://media.istockphoto.com/id/1062922292/photo/ro-water-purification-system.jpg?s=612x612&w=0&k=20&c=MEWUpwMnHLQfnCl_sVGWJYcwiZCtLvZK_PwgK8lnX14="
+                            alt=""></div><br>
+                    <div
+                        class="d-flex justify-content-center align-items-center flex-direction-column text-align-center">
+                        <h2 class="fw-normal text-primary marketing-h2"
+                            style="font-family: 'Signika Negative', sans-serif;">Membrane
+                            Changing
+                        </h2>
+                        <p class="font-size-20" style="width: 335px; font-family: 'EB Garamond', serif;">The membrane in
+                            a water purifier is a critical component that removes impurities and
+                            contaminants from water.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="featurette-divider my-4 container text-white">
+        <div class="shadow p-3 mb-5   my-4 text-white container" style="background-color: #2A2B2D;">
+            <div class="row featurette">
+                <div class="col-md-8 text-align-justify">
+                    <h2 class="featurette-heading fw-normal lh-1 text-color-special">UV Water Purifiers :
+                        <span style="opacity: 0.5;">Protect Your Health and Your Wallet!</span>
+                    </h2><br>
+                    <p class="font-size-20">UV water purifiers are a highly effective and efficient way to purify water.
+                        They use ultraviolet light to kill harmful bacteria, viruses, and other microorganisms that
+                        can cause waterborne illnesses. UV water purifiers are an increasingly popular choice for
+                        people who want to ensure that their water is safe and pure, without the use of chemicals.
+                    </p>
+                </div>
+                <div class="col-md-3 d-flex justify-content-center align-items-center">
+                    <img class="img-fluid featurette-img"
+                        src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1621339054/Croma%20Assets/Small%20Appliances/Water%20Purifier/Images/234581_nzwqye.png/mxw_2048,f_auto"
+                        alt="please reload" style="width: 240px;">
+                </div>
+            </div>
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2 text-align-justify">
+                    <h2 class="featurette-heading fw-normal lh-1">How does a UV water purifier work?</h2><br>
+                    <p class="font-size-20">UV water purifiers work by exposing water to ultraviolet light. The UV light
+                        kills bacteria, viruses, and other microorganisms that are present in the water, making it
+                        safe to drink. Unlike chemical water purification methods, which can leave behind harmful
+                        byproducts, UV water purifiers do not add anything to the water. They simply use a natural
+                        process to kill harmful microorganisms.
+
+                    </p>
+                </div>
+
+                <div class="col-md-5 order-md- img-center ">
+                    <img class="img-fluid" src="https://www.kent.co.in/images/v3/KENT-Maxx-v3.png" alt="" width="500px">
+                </div>
+            </div>
+            <div class="row featurette">
+                <div class="col-md-7 text-align-justify">
+                    <h2 class="featurette-heading fw-normal lh-1">Why choose a UV water purifier?</h2><br>
+                    <p class="font-size-20">There are several reasons why people choose UV water purifiers. First and
+                        foremost, they are highly effective at purifying water. UV water purifiers can eliminate up
+                        to 99.99% of harmful bacteria and viruses, making the water safe to drink. Additionally,
+                        they do not add any chemicals to the water, making them a safe and natural choice for water
+                        purification. UV water purifiers are also easy to use and maintain, and they are
+                        energy-efficient, consuming very little electricity.
+                    </p>
+                </div>
+                <div class="col-md-5 d-flex justify-content-center align-items-center">
+                    <img class="img-fluid featurette-img"
+                        src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1637844657/Croma%20Assets/Small%20Appliances/Water%20Purifier/Images/245682_sr3zc8.png/mxw_2048,f_auto"
+                        alt="" width="265px">
+                </div>
+            </div>
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2 text-align-justify">
+                    <h2 class="featurette-heading fw-normal lh-1">What are the benefits of using a UV water
+                        purifier?</h2><br>
+                    <p class="font-size-20">
+                        There are several benefits to using a UV water purifier. First and foremost, it provides
+                        safe and pure drinking water. This can help to prevent waterborne illnesses and keep you and
+                        your family healthy. Additionally, UV water purifiers do not add any chemicals to the water,
+                        making them a safe and natural choice for water purification. They are also easy to use and
+                        maintain, and they can be installed in a variety of settings, including homes, offices, and
+                        other public spaces.
+                        <br>
+                        If you're looking for an effective and natural way to purify your water, a UV water purifier
+                        may be the right choice for you.
+                    </p>
+                </div>
+
+                <div class="col-md-5 order-md-1 d-flex justify-content-center align-items-center">
+                    <img class="img-fluid featurette-img"
+                        src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1658830445/Croma%20Assets/Small%20Appliances/Water%20Purifier/Images/234585_adzs6a.png/mxw_2048,f_auto"
+                        alt="" width="300px">
+                </div>
+            </div>
+        </div>
+
+        <div class="shadow p-3 mb-5 text-white container" style="background-color: #2A2B2D;">
+            <div class="row featurette">
+                <div class="col-md-7 text-align-justify">
+                    <h2 class="featurette-heading fw-normal lh-1">RO Water Purifiers : <span style="opacity: 0.5;">Say
+                            Goodbye to Harmful Chemicals and Hello to Pure Water</span></h2><br>
+                    <p class="font-size-20">RO (Reverse Osmosis) water purifiers are one of the most popular types of
+                        water
+                        purifiers available today. They use a special membrane to remove impurities and contaminants
+                        from water, resulting in clean and safe drinking water.
+                    </p>
+                </div>
+                <div class="col-md-5 d-flex justify-content-center align-items-center">
+                    <img class="img-fluid featurette-img"
+                        src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1638276910/Croma%20Assets/Small%20Appliances/Water%20Purifier/Images/241433_lew43s.png/mxw_2048,f_auto"
+                        alt="" width="220px">
+                </div>
+            </div>
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2 text-align-justify">
+                    <h2 class="featurette-heading fw-normal lh-1">How does an RO water purifier work?</h2><br>
+                    <p class="font-size-20">RO water purifiers work by forcing water through a semi-permeable membrane
+                        that
+                        blocks impurities and contaminants. The membrane has tiny pores that allow only pure water
+                        molecules to pass through, while blocking contaminants like bacteria, viruses, and
+                        chemicals. The result is clean and safe drinking water that is free from harmful substances.
+                    </p>
+                </div>
+                <div class="col-md-5 order-md-1 d-flex justify-content-center align-items-center">
+                    <img class="img-fluid live-pure-white-img" src="live-pure-white.png" alt="" width="190px">
+                </div>
+            </div>
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1 text-align-justify">Why choose an RO water purifier?
+                    </h2><br>
+                    <p class="font-size-20">There are several reasons why people choose RO water purifiers. First and
+                        foremost, they are highly effective at purifying water. RO water purifiers can eliminate up
+                        to 99% of impurities and contaminants, making the water safe to drink. Additionally, they do
+                        not add any chemicals to the water, making them a safe and natural choice for water
+                        purification.
+                        <br>
+                        RO water purifiers can also remove unwanted minerals from the water, like lead, arsenic, and
+                        fluoride. These minerals can be harmful to health when consumed in large quantities. RO
+                        water purifiers can also improve the taste and odor of water, making it more palatable.
+                    </p>
+                </div>
+                <div class="col-md-5 img-center">
+                    <img class="img-fluid" src="https://www.kent.co.in/images/v3/grand-plus-v3.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="shadow p-3 mb-5   text-white container" style="background-color: #2A2B2D;">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2 text-align-justify">
+                    <h2 class="featurette-heading fw-normal lh-1">Alkaline Water Purifiers : <span
+                            style="opacity: 0.5;">Say Goodbye to Acidic Water with Our Alkaline
+                            Water Purifier</span>
+                    </h2><br>
+                    <p class="font-size-20">An alkaline water purifier is a type of water purifier that not only removes
+                        impurities and contaminants from water but also increases its pH level to make it more
+                        alkaline. This is achieved through a special type of filter that adds minerals like calcium,
+                        magnesium, and potassium to the water, which increases its alkalinity.</p>
+                </div>
+                <div class="col-md-5 order-md-1 d-flex justify-content-center align-items-center">
+                    <img class="img-fluid featurette-img" src="blue_star_small.png" alt="" width="255px">
+                </div>
+            </div>
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1 text-align-justify">Why choose an Alkaline Water
+                        Purifier?</h2>
+                    <br>
+                    <p class="font-size-20"><b style="opacity: 0.5;">There are several reasons why you might choose an
+                            alkaline
+                            water purifier over other types of water purifiers. Here are some of the main benefits
+                            of using an alkaline water purifier:</b>
+                        <br><br>
+                        1. Improves the taste of water : Alkaline water has a smoother, sweeter taste than regular
+                        water, which many people find more appealing. If you're someone who doesn't like the taste
+                        of tap water or bottled water, an alkaline water purifier can make your drinking water more
+                        palatable.
+                        <br>
+
+                    </p>
+                </div>
+                <div class="col-md-5 d-flex justify-content-center align-items-center">
+                    <img class="img-fluid featurette-img"
+                        src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1626784020/Croma%20Assets/Small%20Appliances/Water%20Purifier/Images/234584_hx3owd.png/mxw_2048,f_auto"
+                        alt="" width="300px">
+                </div>
+            </div>
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2 text-align-justify">
+                    <p class="font-size-20">
+                        2. Promotes better hydration : The higher pH level of alkaline water means that it is more
+                        easily absorbed by the body, which can help to improve hydration. Proper hydration is
+                        important for many bodily functions, including digestion, metabolism, and overall health and
+                        wellness.
+                        <br>
+                        3. Provides essential minerals : An alkaline water purifier typically adds minerals like
+                        calcium, magnesium, and potassium to the water, which are essential for good health. These
+                        minerals can help to support bone density, prevent muscle cramps, and support
+                        cardiovascular health.
+                    </p>
+                </div>
+                <div class="col-md-5 order-md-1 d-flex justify-content-center align-items-center">
+                    <img class="img-fluid" src="v-guard-combo.png" alt="" width="385px">
+                </div>
+            </div>
+        </div>
+
+
+<!-- ======= Breadcrumbs ======= -->
+    <div class="container">
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#" style="text-decoration: none; color: #1ae4c0; opacity: 0.6;">Home</a></li>
+          <li class="breadcrumb-item active" style="color:#1ae4c0!important"  aria-current="page">Contact Us</li>
+        </ol>
+      </nav>
+    </div>
+  <!-- End Breadcrumbs -->
+        <section class="ContactUs container" id="ContactUsId">
+            <div class="content">
+                <h2 style="color: #1ae4c0;">Contact Us</h2>
+                <p>Fill out the form below to inquire about our water purifier sales and services. Our team will get
+                    back to you as soon as possible. Thank you for considering Aquarius</p>
+            </div>
+            <div class="ContactUs-Container">
+                <div class="ContactUsInfo">
+                    <div class="box">
+                        <div class="icon"><ion-icon name="location-outline"></ion-icon></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p> Shivshankar Housing Society, Lane No.1,<br>Mhetrevasti, near Mhetre Garden,<br>
+                                Chikhali, Pune - 411 062.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><ion-icon name="call-outline"></ion-icon></div>
+                        <div class="text">
+                            <h3>Phone No.</h3>
+                            <p> 8793-765-998<br>
+                                9518-747-202</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><ion-icon name="mail-outline"></ion-icon></div>
+                        <div class="text email-scroll">
+                            <h3>Email</h3>
+                            <p>aquariuswatersolution@gmail.com</p>
+                        </div>
+                    </div>
+                    <h2 class="txt">Connect with us</h2>
+                    <ul class="sci">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    </ul>
+                </div>
+
+                <div class="ContactUsForm">
+                    <form>
+                        <h2>Send Message</h2>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea required="required"></textarea>
+                            <span>Type your Message...</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <hr class="featurette-divider my-4 container text-white">
+    <footer id="footer">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row foot-items-center">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>Aquarius</h3>
+                        <p>
+                            Shivshankar Housing Society, Lane No.1,<br>
+                            Mhetrevasti, near Mhetre Garden,<br>
+                            Chikhali, Pune - 411 062. <br><br>
+
+
+                            <strong>Phone No.:</strong> 8793 - 765 - 998<br>
+                            <strong>Email:</strong> aquariuswatersolution@gmail.com<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li class="foot-links-center"> <a href="#">Home</a></li>
+                            <li class="foot-links-center"> <a href="#">About us</a>
+                            </li>
+                            <li class="foot-links-center"> <a href="services.html">Services</a>
+                            </li>
+                            <li class="foot-links-center"> <a href="#">Terms of
+                                    service</a></li>
+                            <li class="foot-links-center"> <a href="#">Privacy
+                                    policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li class="foot-links-center"> <a href="services.html#OurServices">Installation
+                                    of Purifier</a></li>
+                            <li class="foot-links-center"> <a href="services.html#OurServices">Repair and
+                                    Maintenance</a></li>
+                            <li class="foot-links-center"> <a href="services.html#OurServices">Water Softner
+                                    Plant</a></li>
+                            <li class="foot-links-center"> <a href="services.html#InstallationOfPurifier">Commercial and
+                                    Industrial Plant</a></li>
+                            <li class="foot-links-center"> <a href="services.html#InstallationOfPurifier">Consultation
+                                    and Advice</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Social Networks</h4>
+                        <p>Follow Us On</p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="twitter">
+                                <i class="bx bxl-twitter"></i>
+                                <svg class="logo-size" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                    fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16" style="color:white;">
+                                    <path
+                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="facebook">
+                                <i class="bx bxl-facebook"></i>
+                                <svg class="logo-size" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                    fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" style="color:white;">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="instagram">
+                                <i class="bx bxl-instagram"></i>
+                                <svg class="logo-size" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                    fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"
+                                    style="color:white;">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="telegram">
+                                <i class="bx bxl-telegram"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                    class="bi bi-telegram" viewBox="0 0 16 16" style="color:white;">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                                </svg>
+                            </a>
+
+                            <a href="#" class="linkedin">
+                                <i class="bx bxl-linkedin"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                    class="bi bi-linkedin" viewBox="0 0 16 16" style="color: white;">
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Samrat Pvt. Ltd</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Designed by Yasha
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+            fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+        </svg></a>
+
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

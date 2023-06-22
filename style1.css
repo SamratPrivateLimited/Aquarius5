@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=EB+Garamond&family=Merriweather:wght@300;400&family=Noto+Sans+JP:wght@500&family=Signika+Negative&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.custom-nav{
+    height: 75px !important;
+    font-size: 17px;
+    overflow: hidden;
+}
+.nav-link{
+    color: #2a2b2d!important;
+    padding-left: 10px !important;
+}
+.nav-li:hover{
+    background-color: #2A2B2D;
+}
+.nav-li:hover a{
+    color: #1ae4c0!important;
+}
+.menu-icons{
+    display: none !important;
+    visibility: hidden!important;
+}
+.toggler-menu-foot{
+    display: none;
+    visibility: hidden;
+}
+.main-header{
+    position: relative;
+    top: 75px;
+    width: 1519px;
+    height: 490px;
+    filter: brightness(40%);
+
+}
+.main-header-text{
+    position: relative;
+    top: -390px;
+    height: 75px;
+    color: white;
+
+}
+.main-header-h1{
+    position: relative;
+    top: 45px;
+}
+.main-header-p{
+    position: relative;
+    top: 80px;
+    font-size: 30px;
+    font-family: 'Merriweather'!important;
+    font-weight: 100;
+}
+.main-header-shop-now-btn{
+    position: relative;
+    top: 110px;
+    height: 50px;
+    width: 435px;
+    font-size: 22px;
+    border: 2px solid red;
+}
+.main-header-h1-font-size{
+    font-size: 75px;
+}
+.testimonial{
+    height: 310px;
+    color: white;
+    width: auto;
+    font-size: 30px;
+}
+.testimonial-p{
+    font-family: 'Signika Negative', sans-serif;
+}
+.testimonial-writer1{
+    font-size: 25px;
+    width: auto;
+    padding-left: 930px;
+    font-family: 'Assistant', sans-serif;
+}
+
+.marketing{
+    margin-top: 50px!important;
+    background-color: #2A2B2D!important;
+    color: white!important;
+    height: 365px;
+}
+.marketing-dimensions{
+    height: 365px;
+    overflow: hidden;
+}
+.featurette-heading{
+    color:#1ae4c0;
+}
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background:#1ae4c0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+  }
+  
+  .back-to-top i {
+    font-size: 24px;
+    color: #2a2b2d;
+    line-height: 0;
+  }
+  
+  .back-to-top:hover {
+    /* background: #6bc1e9; */
+    background: #00bcd4;
+    color: #ffffff!important;
+  }
+  
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  #footer {
+    font-size: 14px;
+    background: #37517e;
+  }
+  
+  #footer .footer-newsletter {
+    padding: 50px 0;
+    background: #f3f5fa;
+    text-align: center;
+    font-size: 15px;
+    color: #444444;
+  }
+  
+  #footer .footer-newsletter h4 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600;
+    color: #37517e;
+  }
+  
+  #footer .footer-newsletter form {
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
+    text-align: left;
+  }
+  
+  #footer .footer-newsletter form input[type=email] {
+    border: 0;
+    padding: 4px 8px;
+    width: calc(100% - 100px);
+  }
+  
+  #footer .footer-newsletter form input[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px;
+    background: #47b2e4;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 50px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #footer .footer-newsletter form input[type=submit]:hover {
+    background: #209dd8;
+  }
+  
+  #footer .footer-top {
+    padding: 60px 0 30px 0;
+    background: #fff;
+  }
+  
+  #footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-contact h3 {
+    font-size: 28px;
+    margin: 0 0 10px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #37517e;
+  }
+  
+  #footer .footer-top .footer-contact p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Jost", sans-serif;
+    color: #5e5e5e;
+  }
+  
+  #footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #37517e;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  #footer .footer-top .footer-links {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #47b2e4;
+    font-size: 18px;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  #footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  #footer .footer-top .footer-links ul a {
+    color: #777777;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul a:hover {
+    text-decoration: none;
+    color: #47b2e4;
+  }
+  
+  #footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #47b2e4;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  
+  #footer .footer-top .social-links a:hover {
+    background: #209dd8;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #footer .footer-bottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+  }
+  
+  #footer .copyright {
+    float: left;
+  }
+  
+  #footer .credits {
+    float: right;
+    font-size: 13px;
+  }
+  
+  #footer .credits a {
+    transition: 0.3s;
+  }
+
+  /* 
+    servies.html css
+  */
+.breadcrumb-section{
+    margin-top: 95px;
+}
+
+/* FAQ's.html */
+
+.dropdown-FAQs{
+    border: none;
+    border-radius: 5px;
+    display: flex !important;
+    justify-content: start !important;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 5px;
+    color: #00bcd4;
+    background-color: #2A2B2D;
+  }
+  .dropdown-FAQs:hover{
+    background-color: #00bcd4!important;
+    color: #2A2B2D!important;
+  }
+  .offcanvas-bottom{
+    height: auto !important;
+  }
+
+@media only screen and (max-width:992px) {
+    .offcanvas-body{
+        margin: 0px !important;
+    }
+    .nav-li:hover svg{
+        color: #1ae4c0;
+    }
+    .water-drop-pos{
+        position: relative;
+        left: 320px;
+    }
+    .water-drop-pos:hover{
+        border: 2px solid rgba(255, 255, 255, 0.655);
+    }
+    .menu-icons{
+        display: block !important;
+        visibility: visible!important;
+    }
+    .toggler-menu-foot{
+        position: relative;
+        top: 200px;
+    }
+    .toggler-menu-foot-sociallogo{
+        width: 150px;
+    }
+    .toggler-menu-foot{
+        visibility: visible;
+        display: block;
+        border-radius: 25px !important;
+    }
+    .menu-foot-container{
+        flex-direction: column!important;
+        align-items: center;
+        margin: 30px 0px;
+    }
+    .menu-foot-icons:hover{
+        background-color: #1ae4c0!important;
+    }
+    .main-header{
+        position: relative;
+        top: 75px;
+        width:1519px;
+        height: 500px;
+        filter: brightness(40%);
+        overflow: hidden;
+    
+    }
+    .main-header-text{
+        position: relative;
+        top: -390px;
+        height: 65px;
+        color: white;
+    
+    }
+
+    .main-header-h1{
+        position: relative;
+        top: 45px;
+    }
+    .main-header-p{
+        position: relative;
+        top: 80px;
+        font-size: 25px;
+    }
+    .main-header-shop-now-btn{
+        position: relative;
+        top: 100px;
+        height: 50px;
+        width: 459px;
+        font-size: 22px;
+    }
+    .main-header-h1-font-size{
+        font-size: 55px;
+    }
+    .testimonial{
+        height: 550px;
+        color: white;
+        font-size: 20px;
+    }
+    .testimonial-p{
+        width: 345px;
+        font-size: 25px;
+    }
+    .testimonial-writer1{
+        font-size: 19px;
+        padding-left: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .marketing{
+        height: 1095px;
+    }
+    .marketing-h2{
+        font-size: 20px;
+    }
+    .foot-items-center{
+        text-align: center;
+    }
+    .foot-links-center{
+        display: grid!important
+    }
+    #footer .footer-bottom {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    
+      #footer .copyright,
+      #footer .credits {
+        text-align: center;
+        float: none;
+      }
+    
+      #footer .credits {
+        padding-top: 4px;
+      }
+}
+@media only screen and (max-width:767px) {
+    .water-drop-pos{
+        left: 225px;
+    }
+    .testimonial{
+        height: 550px;
+        color: white;
+        font-size: 20px;
+        width: auto;
+    }
+    .testimonial-p{
+        width: 345px;
+    }
+    .testimonial-writer1{
+        font-size: 19px;
+        padding-left: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .featurette-img{
+        width: 200px;
+    }
+    .live-pure-white-img{
+        width: 160px;
+    }
+    .about-font-15{
+      font-size: 15px!important;
+    }
+}
+@media only screen and (max-width:650px) {
+    .offcanvas-width{
+        max-width: 70%;
+    }
+    .water-drop-pos{
+        left: 180px;
+    }
+}
+@media only screen and (max-width:550px) {
+    .water-drop-pos{
+        left: 100px;
+    }
+    .toggler-menu-foot{
+        height: 180px;
+        width: 220px;
+    }
+    .main-header-shop-now-btn{
+        width: 425px;
+    }
+}
+@media only screen and (max-width:420px), only screen and (max-width:395px)
+{
+    .water-drop-pos{
+        left: 60px;
+    }
+    .main-header-p{
+        font-size: 22px;
+    }
+    .main-header-shop-now-btn{
+        height: 45px;
+        width: 372px;
+        font-size: 18px;
+    }
+    .main-header-h1-font-size{
+        font-size: 47px;
+    }
+    .submit{
+        position: relative;
+        right: 65px;
+    }
+    .menu-foot-container{
+        height: 135px!important;
+    }
+    .marketing-h2{
+        font-size: 20px;
+    }
+  }

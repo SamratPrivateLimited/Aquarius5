@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=EB+Garamond&family=Merriweather:wght@300;400&family=Noto+Sans+JP:wght@500&family=Signika+Negative&display=swap');
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: rgb(26 228 192);
+}
+.font-size-75{
+    font-size: 75px;
+}
+.font-size-55{
+    font-size: 55px;
+}
+.font-size-20{
+    font-size: 20px;
+}
+.font-size-10{
+    font-size:10px
+}
+.lead{
+    font-family: 'EB Garamond', serif!important;
+    font-size: 23px!important;
+}
+.main-header-shop-now-btn{
+    font-family: 'Signika Negative', sans-serif;
+}
+.main-header-shop-now-btn:hover{
+    color:white!important;
+    
+}
+
+.height-170{
+    height: 170px;
+}
+.height-30{
+    height: 30px;
+}
+.flex-direction-column{
+    flex-direction: column;
+}
+.color-mainBlack{
+    color: #2a2b2d;
+}
+.w-30{
+    width: 30px;
+}
+.text-align-center{
+    text-align: center;
+}
+.text-align-justify{
+    text-align:justify;
+}
